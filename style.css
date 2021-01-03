@@ -1,0 +1,152 @@
+*{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    /* nav bar styling starts here*/
+    nav{
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10vh;
+      width: 100vw;
+      color: white;
+      background-color: black;
+      line-height: 10vh;
+    }
+    .logo{
+      height: 100%;
+      width: 40%;
+      float: left;
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+    }
+    .logo:hover{
+      color: red;
+    }
+    .nav_menu{
+      height: 100%;
+      width: 60%;
+      float: right; 
+    }
+    .nav_menu ul{
+      margin: auto;
+      text-align: center;
+    }
+    .nav_menu ul li{
+      list-style: none;
+      float: left;
+      padding-left: 25px;
+      line-height: 10vh;
+    }
+    .nav_menu ul li a{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      font-size: 18px;  
+    }
+    .nav_menu ul li a:hover{
+      color: red;
+    }
+    /* nav bar styling ends here*/
+
+    /* banner1 goes here*/
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .banner1{
+      width: 100%;
+      height: auto;
+      margin: 20px 0 20px 0;  
+    }
+    .about_me{
+      height: 40vh;
+      width: 50%;
+      float: left;
+      padding: 20px;
+      border: 1px solid black;
+      margin: 20px 20px 20px 40px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 18px;
+    }
+    .profile_picture{
+      height: 40vh;
+      width: 40%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin: 40px;
+    }
+    #profile_picture{
+      border: 2px solid black;
+      border-radius: 50%;
+      padding: 2px;
+      margin: 20px;
+      opacity: 0.9;
+      box-shadow: 10px 10px 20px -6px black;
+    }
+
+    /* banner1 ends here*/
+    .banner2{
+      height: 100vh;
+      width: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(images/img1.jfif);
+      margin-top: 20px;
+    }
+    .cen_content{
+      height: 70vh;
+      width: 70vw;
+      background-image:linear-gradient(120deg, rgba(255,255,255,0.9) 50%, transparent 50%), url(mages/img2.jfif);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      opacity: 0.9;
+      box-shadow: 10px 10px 20px -6px brown;
+      border-radius: 1%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cen_cen_content{
+      height: 40vh;
+      width: 40vw;
+      background: rgba(0,0,0,0);
+      text-align: left;
+      color: black;
+      border-radius: 1%;
+      padding-left: 30px;
+      padding-top: 20px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+    }
+    .cen_cen_content ol li{
+      padding: 5px;
+      font-size: 20px;
+      font-weight: 20px;
+    }
+    .image_slider{
+      height: 80vh;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .images{
+      height: 70vh;
+      width: 70vw;
+    }
+
+    #images {
+      height: 100%;
+      width: 100%;
+    }
