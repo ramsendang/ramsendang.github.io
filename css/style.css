@@ -164,12 +164,14 @@ nav.background .nav_menu li a{
     justify-content: center;
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
 }
 .foods{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    flex-wrap: wrap;
 }
 .post{
     max-width: 600px;
