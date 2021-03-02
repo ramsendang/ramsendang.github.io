@@ -37,3 +37,22 @@ const postObserver = new IntersectionObserver(function(entities, postObserver){
 posts.forEach(post=>{
     postObserver.observe(post);
 })
+
+
+// for sidebar in small devices 
+
+
+// sidebar show 
+function sidebarMenu(){
+    const burger = document.querySelector(".btn-burger");
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.classList.add("clicked");
+}
+
+// sidebar hide 
+
+function hideSidebar(){
+    const hide = document.querySelector(".hide-btn");
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.classList.remove("clicked");
+}

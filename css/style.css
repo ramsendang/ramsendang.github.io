@@ -6,7 +6,7 @@
 .body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 nav{
@@ -18,11 +18,13 @@ nav{
     padding: 10px;
     position: fixed;
     top: 0;
-    z-index: 1000;
-    background: none;
+    z-index: 2;
+    background: white;
     
 }
-
+nav.background .logo a{
+    color: white;
+}
 nav.background{
     background-color: black;
     color: white;
@@ -43,6 +45,10 @@ nav.background .burger a{
     animation: logo-animation 8s linear;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
 }
 @keyframes logo-animation{
     0%{
@@ -105,16 +111,65 @@ nav.background .burger a{
     border: 1px black solid;
     background-color: green;
 }
-.btn{
+.btn-burger{
     display: none;
     cursor: pointer;
 }
 
-.btn:hover{
+.btn-burger:hover{
     color: white;
     background-color: green;
 }
 
+.container{
+    min-height: 100vh;
+}
+
+
+/* sidebar  */
+
+.sidebar{
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: white;
+    transition: .5s;
+}
+
+.sidebar.clicked{
+    transform: translateX(0);
+}
+.hide-btn{
+    cursor:pointer;
+}
+
+.sidebar ul{
+    display: block;
+}
+
+.sidebar ul li{
+    list-style: none;
+    padding: 10% 45%;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+
+/* sidebar  */
+
+
+
+
+/* banner  */
 .banner{
     width: 100%;
     height: 650px;
@@ -161,7 +216,7 @@ nav.background .burger a{
     text-transform: uppercase;
     letter-spacing: 3px;
     background-color: #fff;
-    transition: .5s;
+    transition: 1s;
 }
 
 .banner_description button:hover{
@@ -170,6 +225,10 @@ nav.background .burger a{
 }
 
 
+/* banner  */
+
+
+/* content  */
 
 .nature{
     display: flex;
@@ -236,6 +295,8 @@ nav.background .burger a{
     z-index: 1;                           ;
 }
 
+/* content  */
+
 
 /* footer  */
 
@@ -254,10 +315,10 @@ footer{
     nav{
         height: 50px;
     }
-    .nav_menu{
+    .nav_menu .menu{
         display: none;
     }
-    .btn{
+    .btn-burger{
         display: block;
     }
 
@@ -291,6 +352,14 @@ footer{
     .post{
         max-width: 350px;
         margin: 0;
+    }
+    .post1{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    .post2{
+        opacity: 0;
+        transform: translateY(0);
     }
     footer{
         height: 50px;
