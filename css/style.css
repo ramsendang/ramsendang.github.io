@@ -10,7 +10,7 @@
 }
 
 nav{
-    height:  80px;
+    height:  60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ nav.background .burger a{
 }
 .logo span{
     color: Green;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .nav_menu{
@@ -135,6 +135,7 @@ nav.background .burger a{
     top: 0;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
     transform: translateX(100%);
     background-color: white;
     transition: .5s;
@@ -149,43 +150,49 @@ nav.background .burger a{
 
 .sidebar ul{
     display: block;
+    box-sizing: border-box;
 }
 
 .sidebar ul li{
     list-style: none;
-    padding: 10% 45%;
+    padding: 8px 12px;
+    width: 100%;
+    margin: 10px 20px;
+    border-bottom: 1px black solid;
+    
 }
 
 .sidebar ul li a{
+    font-size: 16px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    text-align: center;
     
 }
+
 
 
 /* sidebar  */
 
 
 /* for slider  */
-.slider{
-    
-}
 
 .prev, .next{
     position: absolute;
-    top: 50%;
+    top: 40%;
     padding: 8px 12px;
     cursor: pointer;
     font-size: 30px;
     color: white;
+    margin: 20px;
 }
 
 .next{
     right: 0;   
 }
 
-.perv:hover, .next:hover{
+.prev:hover, .next:hover{
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -233,6 +240,7 @@ nav.background .burger a{
     border-radius: 10px;
     border: 3px black solid;
     cursor: pointer;
+    color: black;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -484,5 +492,19 @@ input[type=text], input[type=password] {
         height: 400px;
         width: 50%;
         border-radius: 50%;
-      }
+    }
+
+    .prev, .next{
+        position: absolute;
+        top: 30%;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        margin: 20px;
+    }
+    
+    .next{
+        right: 0;   
+    }
 }
