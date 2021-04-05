@@ -75,7 +75,7 @@ header ul li a:hover{
     }
     .navmenu_small_screen.responsive{
         display: flex;
-        height: 100vh;
+        height: 40vh;
         width: 100%;
         justify-content: flex-start;
         align-items: center;
