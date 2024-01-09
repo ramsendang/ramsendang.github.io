@@ -162,6 +162,14 @@ html{
 }
 
 th, td {
-    padding: 15px;
+    padding: 23px;
     text-align: left;
-  }
+}
+
+
+/* editing experience section  */
+.portfolio{
+    display: flex;
+    margin: auto 120px;
+    flex-wrap: wrap;
+}
