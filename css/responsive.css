@@ -1,0 +1,62 @@
+/* making nav menue responsive  */
+/* for mobile phones  */
+
+:root{
+    --small-screen-margin: auto 50px;
+}
+
+.responsive{
+    display: flex!important;
+}
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+        background-color: #fff; /* Example: change background color for mobile */
+    }
+    
+    .header .nav_bar{
+        margin: 0;
+    }
+
+    .header .nav_bar ul li{
+        list-style: none;
+        padding: 0 12px;
+    }
+    .header .nav_bar .nav_menu{
+        display: none;
+    }
+
+    .header .nav_bar .bar{
+        display: flex;
+    }
+}
+/* for Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    .header .nav_bar ul li{
+        list-style: none;
+        padding: 0 12px;
+    }
+    .header .nav_bar .bar{
+        display: none;
+    }
+
+    #mobile_nav_menu{
+        display: none!important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        font-size: 20px;
+    }
+    .header .nav_bar .bar{
+        display: none;
+    }
+    .mobile_nav_menu{
+        display: none!important;
+    }
+}

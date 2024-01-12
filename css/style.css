@@ -16,8 +16,9 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 120px;
-    height: 100px;
+    margin: var(--margin);
+    min-height: 100px;
+    flex-wrap: wrap;
 }
 
 /* ----styling logo---- */
@@ -51,6 +52,25 @@ html{
 .header .nav_bar ul li a:hover{
     text-decoration:underline;
     transition: all 1;
+    color: var(--primary);
+}
+
+.header .nav_bar .bar>li>a{
+    cursor: pointer;
+}
+
+#mobile_nav_menu{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: var(--secondary);
+    padding: 20px;
+    z-index: 100;
+}
+#mobile_nav_menu li{
+    padding-bottom: 20px;
+}
+#mobile_nav_menu a{
     color: var(--primary);
 }
 

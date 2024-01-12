@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ram Kumar Sendang | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
     <script src="js/script.js" defer></script>
@@ -17,13 +18,23 @@
     <section class="header" id="home">
         <nav class="nav_bar">
             <a href=""><img src="images/Logo.png" alt=""></a>
-            <ul>
+            <ul class="bar">
+                <li><a id="menu_button"></a></li>
+            </ul>
+            <ul class="nav_menu" id="nav_menu">
                 <li><a href="#home">Home<i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <ul class="mobile_nav_menu" id="mobile_nav_menu">
+                <li><a href="#home">Home<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
         </nav>
         <div class="intro">
             <div class="intro_text">
@@ -34,7 +45,7 @@
                 </h3>
                 <div class="call_to_action_container">
                     <a href="#about" class="call_to_action_btn">Know more about me!!!</a>
-                    <a href="files/cv.pdf" class="call_to_action_btn">Download my CV</a>
+                    <a href="files/cv.pdf" target="_blank" class="call_to_action_btn">Download my CV</a>
                 </div>
             </div>
             <div class="intro_image">
