@@ -1,3 +1,4 @@
+// Typing Animation 
 const typed = new Typed('.multiple-text', {
     strings: ['Student', 'QA Automation Engineer', 'Web Designer'],
     typeSpeed: 120,
@@ -5,3 +6,5 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
