@@ -13,7 +13,10 @@
         font-size: 14px;
         background-color: #fff; /* Example: change background color for mobile */
     }
-    
+    .header{
+        border-radius: 0 0 150px 0;
+        overflow: hidden;
+    }
     .header .nav_bar{
         margin: 0;
     }
@@ -29,13 +32,52 @@
     .header .nav_bar .bar{
         display: flex;
     }
+
+    /* styling hero section  */
+    .intro{
+        margin: 0;
+        padding: 12px;
+    }
+    .intro .intro_text h3{
+        padding: 16px 0;
+        font-size: 1.2rem;
+    }
+    .intro .intro_text h2{
+        font-size: 1.5rem;
+    }
+    .call_to_action_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .call_to_action_btn{
+        padding: 4px 8px;
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+    
+    .intro .intro_image{
+        display: flex;
+        align-items: center;
+    }
+    .intro .intro_image img{
+        width: 250px;
+    }
+    
+
+    
 }
 /* for Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     body {
         font-size: 18px;
     }
-
+    .header{
+        border-radius: 0 0 200px 0;
+        overflow: hidden;
+    }
+    .header .nav_bar{
+        margin: var(--small-screen-margin);
+    }
     .header .nav_bar ul li{
         list-style: none;
         padding: 0 12px;
@@ -46,6 +88,27 @@
 
     #mobile_nav_menu{
         display: none!important;
+    }
+    /* styling hero section  */
+    .intro{
+        margin: var(--small-screen-margin);
+        padding: 12px;
+    }
+    .intro .intro_text h3{
+        padding: 16px 0;
+        font-size: 1.4rem;
+    }
+    .intro .intro_text h2{
+        font-size: 1.9rem;
+    }
+    .call_to_action_btn{
+        padding: 8px 15px;
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+    
+    .intro .intro_image img{
+        height: 60vh;
     }
 }
 
