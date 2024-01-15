@@ -458,16 +458,16 @@ th, td {
 /* styling the footer  */
 
 .footer{
+    position: relative;
     text-align: center;
     padding: 33px;
     background: linear-gradient(360deg, var(--secondary),var(--background));
-    border-radius: 300px 0 0 0;
 }
 
 .footer_content{
     margin: var(--margin);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -478,6 +478,18 @@ th, td {
     color: black;
 }
 
-.footer a img{
-    width: 80px;
+.footer a{
+    position: absolute;
+    font-size: 33px;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    padding: 4px 16px;
+    border-radius: 6px;
+    bottom: 110px;
+    right: 122px;
+}
+
+.footer a:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
 }
