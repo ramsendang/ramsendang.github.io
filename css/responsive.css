@@ -239,6 +239,16 @@
         text-align: center;
         color: black;
     }
+    .footer a{
+        position: absolute;
+        font-size: 26px;
+        border: 1px solid var(--secondary);
+        color: var(--secondary);
+        padding: 4px 16px;
+        border-radius: 6px;
+        bottom: 60px;
+        right: 20px;
+    }
 }
 /* for Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -339,6 +349,7 @@
     .portfolio .project{
         width: 48%;
     }
+    
 }
 
 @media only screen and (min-width: 1280px) {
