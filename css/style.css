@@ -383,6 +383,7 @@ th, td {
 .contact .contact_content{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contact .contact_title h3{
     font-family: 'Poppins', sans-serif;
@@ -430,6 +431,7 @@ th, td {
     flex-direction: column;
     width: 50%;
     align-items: center;
+    height: 100%;
 }
 
 .contact_content .email .email_title h4{
