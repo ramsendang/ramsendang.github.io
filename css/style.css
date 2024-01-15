@@ -182,26 +182,18 @@ html{
     text-align: center;
 }
 
-.skills_col{
-    width: 600px;
-}
-.skills_col .skills{
-    width: 500px;
-    height: 40px;
-    background-color: #2A49BD;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 16px;
-    margin: 16px 0;
-}
-
 /* editing image of skills sections  */
+.about .col .skills_text{
+    width: 50%;
+}
 .about .col .skill_img{
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .about .col .skill_img img{
-    width: 400px;
+    width: 100%;
 }
 
 th, td {
