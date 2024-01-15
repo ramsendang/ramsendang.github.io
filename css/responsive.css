@@ -116,6 +116,31 @@
         text-decoration: underline;
         text-align: center;
     }
+
+    /* styling-portfolio section  */
+    .portfolio{
+        margin: 0;
+        padding: 20px;
+    }
+    .portfolio .portfolio_title h3{
+        font-size: 0.9rem;
+        padding-bottom: 16px;
+    }
+    .portfolio .project{
+        width: 100%;
+    }
+
+    /* styling for testimonial  */
+    .portfolio .testemonials .testemonials_title h3{
+        font-size: 0.9rem;
+        padding-bottom: 16px;
+    }
+    .portfolio .testemonials .testemonial_card{
+        width: 100%;
+        height: 380px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
     
 }
 /* for Tablet */
@@ -200,11 +225,23 @@
     .about>.col>.skills_text>h3{
         width: 100%;
         font-family: 'Poppins', sans-serif;
-        font-size: 0.9rem;
+        font-size: 1.6rem;
         text-decoration: underline;
         text-align: center;
     }
 
+    /* styling-portfolio section  */
+    .portfolio{
+        margin: 0;
+        padding: 20px;
+    }
+    .portfolio .portfolio_title h3{
+        font-size: 1.6rem;
+        padding-bottom: 16px;
+    }
+    .portfolio .project{
+        width: 48%;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
