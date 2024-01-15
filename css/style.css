@@ -127,27 +127,33 @@ html{
 /* styling about section  */
 .about{
     margin: var(--margin);
-    min-height: 100vh;
+    min-height: 100%;
+    padding: 0px 10px;
 }
 
 .about .col{
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    width: 100%;
 }
 
 .about .about_image{
-    min-width: 600px;
+    width: 50%;
     height: 100vh;
     display: flex;
-    height: 70vh;
     justify-content: flex-start;
     align-items: center;
+}
+
+.about .about_image img{
+    width: 100%;
 }
 
 /* styling about text  */
 
 .about .about_text{
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
