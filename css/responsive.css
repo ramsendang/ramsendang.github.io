@@ -37,13 +37,17 @@
     .intro{
         margin: 0;
         padding: 12px;
+        height: 100%;
+    }
+    .intro .intro_text{
+        justify-content: center;
     }
     .intro .intro_text h3{
-        padding: 16px 0;
-        font-size: 1.2rem;
+        padding: 8px 0;
+        font-size: 0.9rem;
     }
     .intro .intro_text h2{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .call_to_action_container{
         display: flex;
@@ -52,15 +56,16 @@
     .call_to_action_btn{
         padding: 4px 8px;
         margin-bottom: 3px;
-        font-size: 10px;
+        font-size: 8px;
     }
     
     .intro .intro_image{
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .intro .intro_image img{
-        width: 250px;
+        width: 250px;   
     }
     
 

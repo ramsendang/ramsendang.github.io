@@ -79,16 +79,18 @@ html{
     margin: var(--margin);
     display: flex;
     justify-content: space-between;
-    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+    height: 600px;
     overflow: hidden;
 }
 
 /* ----styling text section of hte hero section---- */
 .intro .intro_text{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
 }
 .intro .intro_text h3{
     color: var(--secondary);
@@ -114,10 +116,12 @@ html{
 .intro .intro_image{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .intro .intro_image img{
-    height: 70vh;
+    width: 100%!important;
 }
 
 /* styling about section  */
