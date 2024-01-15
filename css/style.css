@@ -127,7 +127,7 @@ html{
 /* styling about section  */
 .about{
     margin: var(--margin);
-    min-height: 100%;
+    height: 100%;
     padding: 0px 10px;
 }
 
@@ -140,7 +140,6 @@ html{
 
 .about .about_image{
     width: 50%;
-    height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
