@@ -8,7 +8,7 @@
 .responsive{
     display: flex!important;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     body {
         font-size: 14px;
         background-color: #fff; /* Example: change background color for mobile */
@@ -259,6 +259,9 @@
     }
     .header .nav_bar{
         margin: var(--small-screen-margin);
+    }
+    #menu_button{
+        display: none!important;
     }
     .header .nav_bar ul li{
         list-style: none;
